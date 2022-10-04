@@ -6,7 +6,6 @@ function isMerge($s, $part1, $part2) {
     $arr = str_split($s);
 
     while (count($arr) > 0) {
-        print_r($arr);
         $len1 = 0;
         $len2 = 0;
 
@@ -32,19 +31,12 @@ function isMerge($s, $part1, $part2) {
 
         if ($len1 > $len2) {
             $txt = array_splice($txt, 1);
-            $arr = array_splice($arr, 1);
         } else {
             $txt2 = array_splice($txt2, 1);
-            $arr = array_splice($arr, 1);
-            print_r($txt2);
         }
-
+        $arr = array_splice($arr, 1);
     }
-    print_r($txt);
-    if (empty($txt) && empty($txt2) && empty($arr)) {
-        return true;
-    }
-    return false;
+    return count_chars($s) === count_chars($part1 . $part2);
 }
 
 
