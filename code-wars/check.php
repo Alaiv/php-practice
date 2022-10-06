@@ -14,4 +14,3 @@ function narcissistic(int $value): bool
     return $count === $value;
 }
 
-print_r(narcissistic(371));
