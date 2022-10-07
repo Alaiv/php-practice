@@ -1,0 +1,18 @@
+{
+    "name": "practice/alaiv",
+    "description": "doing stuff",
+    "autoload": {
+        "files": [
+
+        ]
+    },
+    "authors": [
+        {
+            "name": "Aleks",
+            "email": "lasacc4@yandex.ru"
+        }
+    ],
+    "require": {
+        "funct/funct": "^1.5"
+    }
+}
