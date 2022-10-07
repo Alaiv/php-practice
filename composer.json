@@ -13,6 +13,7 @@
         }
     ],
     "require": {
-        "funct/funct": "^1.5"
+        "funct/funct": "^1.5",
+        "ext-mbstring": "*"
     }
 }
